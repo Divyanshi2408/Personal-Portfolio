@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+  <div class="main">
+      <div class="left">
+      <div class="slider">
+          <img src="image1.jpeg">
+          <img src="image3.jpeg">
+          <img src="image5.jpeg">
+          <img src="image6.jpeg">
+          </div>
+        
+          <div class="name-text">
+              <h1>divyanshi pal</h1>
+              <h5>student</h5>
+              <div id="nav"></div>
+    </div>
+  </div> 
+  <div class="right">
+      <div id="about">
+          <h2>About Me</h2>
+          <hr>
+          <p>I am pursuing B.Tech from Eshan group of institute of mathura with stream of computer science and engineering.I enjoy taking complex problem and turning them simple. I also wright efficeint code wheather it be in HTML,CSS,Javascript</p>
+           <a href="#" class="btn next"> contact me</a>
+        </div>
+        <div id="contact">
+            <h2>contact me</h2>
+            <hr>
+            <p><strong>phone : </strong>(564) 9876 5432 10</p>
+            <p><strong>email : </strong>divyanshipal2808@gmail.com</p>
+            <p><strong>follow me : </strong>
+                <a href="https://www.instagram.com/divyanshipal2808/"><i class="fa fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/divyanshi-pal-b66133210"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Divyanshi2408"><i class="fa fa-github"></i></a>
+            </p>
+            <a href="#" class="btn prev">Back to profile</a>
+        </div>
+  </div> 
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+   <script>
+        
+        $(function(){
+          
+            $(".slider").cycle({
+                fx: 'scrollDown',
+                timeout: 1000,
+               pager: '#nav',
+               pagerEvent: 'click'
+
+            });
+            $(".next").on('click',function(){
+           $("#contact").slideDown(1200);
+           $("#about").slideUp(1200);
+       });
+       $(".prev").on('click',function(){
+           $("#contact").slideUp(1200);
+           $("#about").slideDown(1200);
+       });
+        
+        });
+    </script>
+         
+
+        
+
+    
+        
+          
+        
+        
+
+    
+</body>
+</html>
