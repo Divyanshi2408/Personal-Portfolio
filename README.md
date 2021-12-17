@@ -21,8 +21,11 @@ Contanct page
 Features 📋
 
 ⚡️ Fully Responsive
-⚡️ Valid HTML5 & CSS3
+
+⚡️ Valid HTML & CSS3
+
 ⚡️ animation using jquery
+
 ⚡️ Easy to modify
 
 Sections 📚
